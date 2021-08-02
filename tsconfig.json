@@ -1,0 +1,24 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "inlineSourceMap": true,
+    "declaration": false,
+    "noImplicitAny": false,
+    "outDir": "tmp",
+    "target": "es5",
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "types": [
+      "jasmine",
+      "node"
+    ],
+  },
+  "exclude": [
+    "node_modules",
+  ],
+  "include": ["e2e/**/*"],
+}
