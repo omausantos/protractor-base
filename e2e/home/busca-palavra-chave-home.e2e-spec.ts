@@ -37,5 +37,6 @@ describe('Busca por palavra-chave a partir da home', () => {
       expect(browser.getCurrentUrl()).toContain('q=ford');
       done();
     });
+    
   });
 });
