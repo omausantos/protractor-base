@@ -13,9 +13,12 @@ const AllureReporter = require('jasmine-allure-reporter');
 exports.config = {
   framework: 'jasmine',
   capabilities: {
-    browserName: 'chrome'
+    browserName: 'chrome',
+    chromeOptions: {
+      args: [ "--headless", "--disable-gpu" ]
+    }
   },
-  chromeDriver: './webdriver-manager/selenium/chromedriver_92.0.4515.107.exe',
+  chromeDriver: './webdriver-manager/selenium/chromedriver',
   specs: [
     './tmp/**/**.js'
   ],
