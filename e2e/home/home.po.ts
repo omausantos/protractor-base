@@ -22,9 +22,9 @@ export class HomePage {
     }
     browser.waitForAngularEnabled(false);
     if (url) {
-      browser.get('https://www.meucarronovo.com.br/');
+      browser.get(url);
     } else {
-      browser.get('https://www.meucarronovo.com.br/');
+      browser.get('/');
     }
     // browser.sleep(4000);
   }

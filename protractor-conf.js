@@ -15,13 +15,15 @@ exports.config = {
   capabilities: {
     browserName: 'chrome',
     chromeOptions: {
-      args: [ "--headless", "--disable-gpu" ]
+      args: [ "--headless" ]
     }
   },
   chromeDriver: './webdriver-manager/selenium/chromedriver',
   specs: [
     './tmp/**/**.js'
   ],
+  baseUrl: 'https://www.meucarronovo.com.br/',
+
   directConnect: true,
 
   // You could set no globals to true to avoid jQuery '$' and protractor '$'
