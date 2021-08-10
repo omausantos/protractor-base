@@ -9,20 +9,16 @@
 // To run this example, run `protractor conf.js`.
 const { SpecReporter } = require("jasmine-spec-reporter");
 const AllureReporter = require('jasmine-allure-reporter');
-const { Authenticator } = require('authenticator-browser-extension');
 
 exports.config = {
   framework: 'jasmine',
   capabilities: {
     browserName: 'chrome',
     chromeOptions: {
-      extensions: [
-        Authenticator.for('username', 'password').asBase64()
-      ],
-      args: [ "--headless" ]
+      args: [ '--headless' ]
     }
   },
-  chromeDriver: './webdriver-manager/selenium/chromedriver',
+  chromeDriver: './webdriver-manager/selenium/chromedriver/version-92',
   specs: [
     './tmp/**/**.js'
   ],

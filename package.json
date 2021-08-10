@@ -12,7 +12,6 @@
   "dependencies": {
     "@types/jasmine": "^3.3.12",
     "@types/node": "^16.4.10",
-    "authenticator-browser-extension": "^1.4.9",
     "jasmine": "^3.3.1",
     "jasmine-allure-reporter": "^1.0.2",
     "jasmine-spec-reporter": "^7.0.0",
